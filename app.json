@@ -1,0 +1,44 @@
+{
+  "pages": [
+
+    "pages/ConferenceRoomReservation/ConferenceRoomReservation",
+    "pages/index/index",
+    "pages/scan/scan",
+    "pages/mine/mine"
+    
+
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "微信",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "F6AF6D",
+    "borderStyle": "white",
+    "list": [{
+        "selectedIconPath": "./static/bottomicon/shouye.png",
+        "iconPath": "./static/bottomicon/shouye.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "./static/bottomicon/saoyisao.png",
+        "iconPath": "./static/bottomicon/saoyisao.png",
+        "pagePath": "pages/scan/scan",
+        "text": "扫一扫"
+      },
+      {
+        "selectedIconPath": "./static/bottomicon/wodedangxuan.png",
+        "iconPath": "./static/bottomicon/wodedangxuan.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  }
+}

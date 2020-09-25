@@ -1,0 +1,63 @@
+<view class="container">
+  <view class="content">
+    <!-- 页面顶部内容显示区 -->
+    <view class="content-body1">
+      <!-- 返回上一级 -->
+      <view class="backindex">
+        <navigator url="/pages/index/index" open-type="switchTab" hover-class="other-navigator-hover">
+          <image src="../../static/bottomicon/fanhui.png"></image>
+        </navigator>
+        <view>会议室预定</view>
+      </view>
+      <!--会议室  -->
+      <view class="cb1-content">
+        <image src="../../static/第一张.png"></image>
+        <view class="cb1-right">
+          <view>
+            叁門堂
+          </view>
+          <view>
+            所属大厦：祈福5-6楼
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 页面主要内容显示区 -->
+    <view class="content-body2">
+      <!-- 选项卡 -->
+      <view class="tab">
+
+        <view class="page">
+          <mp-tabs tabs="{{tabs}}" activeTab="{{activeTab}}" swiperClass="weui-tabs-swiper" bindtabclick="onTabClick"
+            bindchange="onChange" activeClass="tab-bar-title__selected" tab-underline-color="none"
+            tab-inactive-text-color="black" tab-active-text-color="#5EACF8">
+            <block wx:for="{{tabs}}" wx:key="title" class="pagesindex">
+              <view class="tab-content" data-set="{{item}}" slot="tab-content-{{index}}" bind:tap="handleClick">
+                <!-- 二维数组 -->
+                <view class="displayarea" wx:for='{{array}}' wx:key='index'>
+                  <view>
+                    <view class="da-title">
+                      {{item.name}}
+                    </view>
+                    <view class="part">
+                      <!-- 具体时间 -->
+                      <view wx:for="{{item.data}}" wx:for-item="userItem" wx:key="userItem" 
+                      class="part-s {{userItem.stst==true?'partz':''}}"
+                        bindtap="tapName">
+                        {{userItem.time}}
+                      </view>
+                    </view>
+                  </view>
+                </view>
+              </view>
+            </block>
+          </mp-tabs>
+        </view>
+      </view>
+    </view>
+    <!-- 页面底部功能区 -->
+    <view class="content-body3">
+      立即预定
+    </view>
+  </view>
+</view>

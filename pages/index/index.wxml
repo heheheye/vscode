@@ -1,0 +1,7 @@
+
+<view class="container">
+  <view>
+    <navigator url="/pages/ConferenceRoomReservation/ConferenceRoomReservation" hover-class="navigator-hover" class="crr">跳转会议室预定</navigator>
+   
+  </view>
+</view>

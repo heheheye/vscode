@@ -1,0 +1,10 @@
+.crr {
+  width: 500rpx;
+  height: 60rpx;
+  border: 1px solid red;
+  background: red;
+  border-radius: 20rpx;
+  color:white;
+  line-height:60rpx;
+  text-align:center
+}
